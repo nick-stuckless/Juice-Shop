@@ -20,9 +20,12 @@ models.sequelize.query(
 This ensures user input is treated strictly as data, preventing malicious SQL execution.
 
 To build and run the lab in Docker, clone the repository and build the custom image with:
-docker build -t my-juice-shop .
+
+docker build -t my-juice-shop
+
 Then run the container:
 docker run -p 3000:3000 my-juice-shop
+
 Juice Shop will be available at http://localhost:3000.
 
 Validation is done by testing the exploit before and after the fix. Before the fix:
